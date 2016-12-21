@@ -8,3 +8,8 @@ git push origin <remote> master <branch>
 git init
 *to add a file to be tracked in the repository
 git add <filename>
+*to add a repository thats made using init locally --
+git remote add origin <https//...>
+git push -u origin master 
+*to use git pages, make the master branch named
+"gh-pages" then settings->default branch-> gh-pages and delete the master branch
