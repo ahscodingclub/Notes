@@ -1,3 +1,4 @@
+**How to use git**
 git status
 git clone https://github.com/ahscodingclub/Notes.git
 -change file
