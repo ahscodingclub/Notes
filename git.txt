@@ -1,16 +1,19 @@
 **How to use git**
-git status
-git clone https://github.com/ahscodingclub/Notes.git
--change file
-git commit -a -m '<comment>' 
-git remote -v
-git push origin <remote> master <branch> 
-*to make a directory a git repository --
-git init
-*to add a file to be tracked in the repository
-git add <filename>
-*to add a repository thats made using init locally --
-git remote add origin <https//...>
-git push -u origin master 
-*to use git pages, make the master branch named
+git status -> make sure that git is installed and functional 
+git remote -v -> show verbose information on the remote
+git config --global user.name "ahscodingclub" -> set your username
+git config --global user.email "jake.sauter3@gmail.com" -> set your email
+*there is two options for starting a repository 
+  git clone https://github.com/ahscodingclub/Notes.git -> clone a repository to your directory 
+  git init -> make your directory a git repository
+    git remote add origin <https//...> -> add a repository thats made using init locally
+    git push -u origin master 
+git add <filename> -> add a file to be tracked in your repository
+git add . -> adds all the changed to be committed
+git commit -a -m '<comment>' -> make a commit
+git push origin <remote> master <branch> -> push changed from the clone to the master branch
+git reset --soft HEAD^ -> remove the last commit but keep the changes to the file
+git reset --hard HEAD^ -> this line removes the last commit and reverts the changes to the file
+git checkout -b myBranch -> create and move to that new branch
+**to use git pages, make the master branch named
 "gh-pages" then settings->default branch-> gh-pages and delete the master branch
