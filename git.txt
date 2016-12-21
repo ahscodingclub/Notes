@@ -1,0 +1,10 @@
+git status
+git clone https://github.com/ahscodingclub/Notes.git
+-change file
+git commit -a -m '<comment>' 
+git remote -v
+git push origin <remote> master <branch> 
+*to make a directory a git repository --
+git init
+*to add a file to be tracked in the repository
+git add <filename>
