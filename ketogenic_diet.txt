@@ -1,6 +1,25 @@
-* breakfast - eggs, spinach, mushrooms, peppers, cheese is not that bad, 
-* lunch - cashew chicken salad, more cashews on side 
-* dinner - something fatty, (salmon, lamb) with vegitables (asparagus/brocolli)
+****Nueuroscientific effects of ketons on brain function****
+* ketones help with the production of glutamate which get
+  made into gaba, however it also seems to increase the ratio
+  of production from glutamate to gaba 
+* ketones have less steps to become atp (energy for muscles)
+* levels of glucose can never be 0, they help with some neuro-
+  transmitters
+****Physiological effects of ketons****
+* noticible increase in breathe hold time
+* through fasting the brain will naturally
+  start to rely on ketons through the consumpion
+  of fat reserves. 
+**tracking diets**
+* keep track of macros
+    macros: <cals> <fat>f/<cholestoral>c/<protein>p
+**Ketogenic diet**
+* no rice, bread, fruits and some vegetables
+* diet based on fat and protein 
+*example diet: 
+  * breakfast - eggs, spinach, mushrooms, peppers, cheese is not that bad, 
+  * lunch - cashew chicken salad, more cashews on side 
+  * dinner - something fatty, (salmon, lamb) with vegitables (asparagus/brocolli)
 ****Vegetarian****
 * keep carbs below 20-30 grams per day 
 * keep pescatarianism a possibility
@@ -10,9 +29,16 @@
   nuts, cheese
 * protein .5 grams protenin per pound 
 * mct oil will help liver produce ketones
-* once in ketosis, the body will stay in ketosis if it is getting less than 100g of carbs per day 
-* keep track of macros
-    macros: <cals> <fat>f/<cholestoral>c/<protein>p
-* no rice, bread, fruits and some vegetables
-* diet based on fat and protein 
+* once in ketosis, the body will stay in ketosis 
+  if it isgetting less than 100g of carbs per day 
 * tofu, greek yogurt are good options
+** Ketoacidosis is not a risk due to insulin still 
+   being present, however is a possible problem for
+   diabetics
+* other risks and solutions
+   * fatigue - b5 
+   * cramps - potassium
+   * bloating - bile salsts (bhb)
+   * sleep issues - calcium / magnesium
+* very little sugar can be consumed to allow the body
+  to switch over to a ketogenic state
