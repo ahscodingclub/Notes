@@ -1,0 +1,34 @@
+* find -name <name> -- to find a file or directory recursively
+* which <command> -- find the binary 
+* locate <filename> -- finds a file using the database, which 
+                         must be updated to find a new file
+* tar xvf <filename.tar> -- untar a downloaded directory 
+* ifconfig <source> <ip> (eth0 192.168.1.115) -- reassigns current ip
+* ifconfig netmask 255.255.255.0 -- reassigns netmask
+* ifconfig broadcast 192.168.1.255 -- reassigns broadcast address
+* dig <domain name> ns -- display name server for domain name
+* dig <domain name> mx -- display mail server for domain name
+* ls -l -- will show everything about a file, including permissions
+* chmod 777 <filename> -- chmod is intersting, <d/-> (directory or file) owner, group, world permissions
+                                               -rwx rwx rwx 
+                                                421 421 421
+                                                 7   7   7   or ... chmod (u/g/o)(+/-)(r/w/x) <filename>
+* ps aux -- list all processes (a) from the user (u) and outside the terminal (x)             
+            ps aux | more -> search -> kill pid
+  ps -A -- less info
+* top -- shows the top running processes
+          kill -9 if process is actually malicious 
+* nice -n (-20 - +19) command -- starts a the command with a priority indicated by -n
+                                   with lower being higher priority 
+* renice <pid> <value> -- reassigns priority of running process 
+* set -- sets the new enviornment variable
+  HISTSIZE = 0 -- sets the command history size to 0 for the current environment (terminal)
+  export HISTSIZE -- sets the defalut value of HISTSIZE to the one in the environment
+  PS1 = "" -- changes prompt ( can export as well )
+  PATH=$PATH:another/path/that/we/want -- to add to the PATH 
+* cat -- shows file 
+  head -- shows head
+  tail -- shows tail  
+  nl -- shows with line numbering
+* grep -- filering program ex: cat /etc/snort/snort.conf | grep mysql 
+* sed -- stream editor ex: sed s/mysql/MySQL/g snort.conf > snort2.conf
