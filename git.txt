@@ -17,3 +17,5 @@ git reset --hard HEAD^ -> this line removes the last commit and reverts the chan
 git checkout -b myBranch -> create and move to that new branch
 **to use git pages, make the master branch named
 "gh-pages" then settings->default branch-> gh-pages and delete the master branch
+--
+git rm <filename> -- to untrack and remove a file from a git repository

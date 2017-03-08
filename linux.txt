@@ -1,3 +1,16 @@
+****shortcuts****
+* alt+f7 -- grab window  
+
+
+
+*****************
+tar -cvpzf backup.tar.gz --exclude=/backup.tar.gz --one-file-system / 
+* tar -cvpzf backup.tgz --exclude=/proc --exclude=/lost+found --exclude=/backup.tgz --exclude=/mnt --exclude=/sys /
+   -- to backup the complete system into a tarball
+   -- this is using BZIP2, which has higher compression than gzip, but if
+      it needs to be a little quick and less compression can suffice, then 
+      use 'z' instead of 'j' in the command line arguments 
+* evince <filename> -- to open a pdf or image from command line
 * find -name <name> -- to find a file or directory recursively
 * which <command> -- find the binary 
 * locate <filename> -- finds a file using the database, which 
@@ -31,4 +44,110 @@
   tail -- shows tail  
   nl -- shows with line numbering
 * grep -- filering program ex: cat /etc/snort/snort.conf | grep mysql 
+    grep <sequence> <file> -- to use grep to find a sequence in a file
 * sed -- stream editor ex: sed s/mysql/MySQL/g snort.conf > snort2.conf
+* lsmod/modprobe -l -- list modules
+* modprobe -r <module> -- remove a module 
+* ls -l /etc/modprobe.d/ -- to see config files of modules 
+* mount -t filesystemtype location -- self explanatory 
+                         ex: mount -t /dev/cdrom /media
+  umount -- ex: umount /dev/cdrom
+  rw - mount read/write
+  ro - mount read only
+  user - permit any user to mount
+  auto/noauto - file system will or will NOT automatically mount
+  exec/noexec - permit or prevent the execution of binaries on the mounted device
+  ** can always check man mount
+* fstab -- can be used for auto mounting
+    6 cols in the table 
+        Device - the UUID
+        Mount point - the directory where we want to attach the device
+        Type - the filesystem type such ext2, ext3, swap, ISO9660, etc.
+        Options - these rw (read/write), auto, nouser, async, suid, etc
+        Dump - indicates how often to backup the device
+        Pass - specifies the pass when fsck should check the filesystem
+* mysql -u root -p -- to start mysql through commmand line
+         this will default to localhost, but for remote access you 
+         only must include the ip after the command
+         ex: mysql -u root -p 192.168.1.101
+  * show databases; -- will show all databases in mysql 
+  * use <databasename> -- connect to the database
+  * show tables; -- show the tables of the database
+  * describe cardnumbers; -- show the structure of the table
+  * SELECT <columns> FROM <table> -- selects identified columns from table
+  * SELECT * FROM <table>; -- select all data from table
+  * mysql --tab = /tmp --user root -p creditcardnumbers cardnumbers;
+       explanation: username (root), password, database name, table, directory to (/tmp)
+  * Secure SSH Tunelling to database
+    * ps aux | grep mysql -- to get pid of mysqld running
+    * pkill -9 mysqld -- to kill and pre-existing instance 
+    * mysqld_safe start
+    * sshd-generate -- generate a private and public key
+    * ssh -L3316:127.0.0.1:3306 nullbyte@192.168.1.112
+      ssh is the client command, -L3316 listens on port 3316, 127.0.0.1 is 
+      the location of the SSH client daemon on the client machine, 3306 is the 
+      default port of MySQL that we want the tunnel to on the server machine
+      nullbyte is a user on the operating system on the server
+      192.168.1.112 the IP address of the MySQL server
+    * mysql -u root -p -- to login to the now connected sql server
+* stdin(0), stdout(1), stderr(2)
+* ls /etc/hosts /etc/aircrack-ng 1>goodoutput 2>erroroutput -- directs good output of stdout(1) 
+      to goodoutput and sterr(2) output to erroroutput 
+* ls /etc/hosts /etc/aircrack-ng >goodoutput 2>&1 -- sends both stdin and stdout to the same file
+* vim etc/hosts -- you can add your own ip shortcuts to DNS through this file, by adding in 
+                   the correct format
+                   ex: 192.168.116.7 hacker
+* /etc/resolv.conf -- file which points the system to a DNS server
+* /etc/nsswitch.conf -- file which tells our system the order to look for an ip match
+* cron -- linux utility for job scheduling 
+  * locate crontab -- shows location of "cron table"
+  * once located, follow the scheme to schedule a job
+  * if the command you are using is not in the default path, feel 
+    free to add more paths onto the default with a colon then the path 
+  * specifications can be separtated by commas or a dash for running
+    during multiple specific times
+* screen -- command to make screen sessions
+    ctrl-A -- screen command mode 
+      d -- detatch screen session
+      c -- create new screen
+      n -- next screen session tab
+      shift-s -- split screen
+      tab -- switch windows
+      | -- split verticle
+      shift-x -- kill a split
+      
+    -dr -- detatch if existing screen and
+            reattach to current console
+            "screen doctor" 
+    -list -- list all screen sessions and
+              their pid's
+    exit -- leave screen session
+*script <file> -- command to log terminal 
+  exit -- exits logging session
+* scp <file> <destination> -- to put a file somewhere
+      ex: scp assingment jsauter@cs.oswego.edu:~/public_hmtl/csc466/
+****SysAdmin Stuffs****
+* uname -a -- to check all interesting facts about kernel
+        -v -- just to check kernel version
+        -r -- just to check kernel release
+* ifconfig -- show current ip address of system (old way)
+* ip addr show -- show all ips on system (new way)
+          <device name> -- show the ip of this component
+* df -ah -- disk free, all file systems with human
+              readable formatting
+          
+* service <service name> status -- check the status of
+                                    a service (old way)
+* systemctl status <service> -- check the status of 
+                                   a service (new way)
+* du -sh <directory> -- to check the size of everything in                          a directory
+* netstat -tulpn -- to check for open ports tcp udp
+
+
+
+
+
+
+
+
+

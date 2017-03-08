@@ -1,0 +1,12 @@
+* Syntax -- the structure of language, such as English being a an svo language
+* a tree can be contructed for representation of sentences
+* Semantics --  the meaning of language, including the ambiguity of language
+* interpretation is based on context
+* Morphology -- structure of words, with a morphene being the smallest unit of meaning
+               ex: when the "ment" suffix is added to the verb "establish" is becomes a noun
+                   making ment a derivational morphene
+* Phonetics -- properties of sounds
+               ex: the difference between an |s| sound and |z| sound is simply the vibration
+                   of vocal folds
+* Phonolgy -- paterns of sounds
+              ex: pay, bay, ebay

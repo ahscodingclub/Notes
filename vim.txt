@@ -1,5 +1,11 @@
-* GA - to start appending to the end of a file
-* Go - to start appending a new line to the end of a file 
+* GA -- to start appending to the end of a file
+* Go -- to start appending a new line to the end of a file 
 * 0 to jump the begining of a line
-* o - to start a new line under the current
-* O - to start a new line above the current
+* o -- to start a new line under the current
+* O -- to start a new line above the current
+* :%s/foo/bar/g ---- find and replace, add c, no space, to
+                   add confirmation
+* 3diw -- delete 3 "inside" words, meaning spaces count 
+  3daw -- delete 3 actual words, spaces do not count
+* . -- do last command again
+* ctrl--R -- to undo an undo, to redo last undone change
