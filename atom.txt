@@ -1,0 +1,3 @@
+* to add a new package <ctrl><+><,> and seach to download 
+* can use dot language with a nice atom package
+* <ctrl><shift><p> to go to package, and search for graphiz preview
