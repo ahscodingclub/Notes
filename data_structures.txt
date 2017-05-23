@@ -1,0 +1,62 @@
+****RED/BLACK TREES****
+Four properties must be maintained in a red/black tree
+1. Every node myst be red or black
+2. The root and leaves (nil) are black
+3. If a node is red, then its children are black
+4. All paths from a node to its NIL descendants 
+   contain the same number of black nodes
+Operations
+-search 
+-insert
+-remove
+* rotations will be used to keep the 
+  structure of the tress
+  - two types of rotations, left and right
+    left rotate: the middle node becomes the head, 
+                 the top node becomes the left child
+                 and the bottom node becomes the child
+                 of the middle node
+        pseudocode: Left-Rotate(T,x)
+                      y = x.right         //set y
+                      x.right = y.left    //turn y's left subtree into x's right subtree
+                      if y.left != nil
+                        y.left.p = x 
+                      y.p = x.p           //link x's parent to y 
+                      if x.p == T.nil
+                        T.root = y
+                      elseif x == x.p.left
+                        x.p.left = y
+                      else
+                        x.p.right = y
+                      y.left = x         //put x on y's left 
+                      x.p = y
+                 
+    right rotate: the middle node becomes the head,
+                  the top node become the right child, 
+                  and the bottom node becomes the original
+                  top nodes child, to the left 
+        pseudocode: Right-Rotate(T,x)
+                      y = x.left        //set y
+                      x.left = y.right   //turn y's right subtree into x's left subtree
+                      if y.right != nil
+                        y.right.p = x
+                      y.p = x.p          //link x's parent to y
+                      if x.p == T.nil
+                        T.root = y
+                      elseif x == x.p.left
+                        x.p.left = y
+                      else 
+                        x.p.right = y
+                      y.right = x        //put x on y's right
+                      x.p = y
+  - one would right rotate to position more elements
+    on the right branch of the binary subtree, and 
+    would left rotate to position more elements
+    on the left branch of the binary subtrees
+*Inserion
+4 scenarios
+1. z=root -> color is black
+2. z.uncle-red -> recolor
+3. z.uncle = black(triangle) -> rotate z.parent
+4. z.uncle = black(line) -> rotate z.grandparent and recolor
+

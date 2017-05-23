@@ -10,3 +10,12 @@
                    of vocal folds
 * Phonolgy -- paterns of sounds
               ex: pay, bay, ebay
+nlp1
+nlp2
+nlp3
+ba
+baa
+baaa
+baaaa
+gray
+grey

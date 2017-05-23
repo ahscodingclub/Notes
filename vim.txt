@@ -9,3 +9,7 @@
   3daw -- delete 3 actual words, spaces do not count
 * . -- do last command again
 * ctrl--R -- to undo an undo, to redo last undone change
+* <ctrl><-> -- zoom out
+* <ctrl><shift><+> -- zoom in 
+* 4x -- delete 4 characters
+<start><end>s/<to be replaced>/<with> -- replaces for line sequence

@@ -1,4 +1,4 @@
-****shortcuts****
+***shortcuts****
 * alt+f7 -- grab window  
 
 
@@ -114,13 +114,19 @@ tar -cvpzf backup.tar.gz --exclude=/backup.tar.gz --one-file-system /
       shift-s -- split screen
       tab -- switch windows
       | -- split verticle
+      S -- split horizontal
       shift-x -- kill a split
+      k -- kill the current screen window
+           (one screen in the screen session)
       
     -dr -- detatch if existing screen and
             reattach to current console
             "screen doctor" 
     -list -- list all screen sessions and
               their pid's
+    -esc -- copy mode, can use up and down to scroll
+      -esc esc -- exit copy mode and return to the 
+                  end of the buffer
     exit -- leave screen session
 *script <file> -- command to log terminal 
   exit -- exits logging session
@@ -142,10 +148,25 @@ tar -cvpzf backup.tar.gz --exclude=/backup.tar.gz --one-file-system /
                                    a service (new way)
 * du -sh <directory> -- to check the size of everything in                          a directory
 * netstat -tulpn -- to check for open ports tcp udp
-
-
-
-
+* rename 's/^TestSR/CL/' * -- to rename files in a directory
+-----
+*I had an issue where I was not able to click "apply" in display settings
+  to resize the display while connected to another monitor (projector).
+  The way I was able to solve this was by deleting some config settings 
+  for this output, in a file I found by running <locate --existing monitors.xml>
+------
+lscpu -- list important statistics about the machine, including the number of 
+         cores and sizes of caches
+------
+* <ctrl><alt><F1-F7> -- spawn virtaul terminal ( f7 ) is gui
+------
+* eog -- open images via command line
+------
+rename 's/^/1_/' DATASET* -- for renaming every file to something appneded to it that starts with "dataset" 
+------
+fusermount -u /home/t420/Documents/Test to unmount an ecrypted folder
+------
+sudo service network-manager restart -- to restart the wifi card 
 
 
 

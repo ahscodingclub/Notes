@@ -6,6 +6,9 @@ git config --global user.email "jake.sauter3@gmail.com" -> set your email
 *there is two options for starting a repository 
   git clone https://github.com/ahscodingclub/Notes.git -> clone a repository to your directory 
   git init -> make your directory a git repository
+git status
+git diff <filename> -- shows the differences of the file that have been tracked     
+                        versus the current version of the file
     git remote add origin <https//...> -> add a repository thats made using init locally
     git push -u origin master 
 git add <filename> -> add a file to be tracked in your repository
