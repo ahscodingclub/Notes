@@ -1,0 +1,29 @@
+octave -- starts octave GUI
+octave-cli -- starts octave via command line
+exit -- exits command line octave
+PS1(">> ") -- change the prompt
+valid calculations include: 5+5 ; 10-5 ; 1/2 ; 2^8; pi
+text = "Hello World" -- initializes the text variable
+semicolons after lines run the command in the background
+r = [1 2 3 4] or r = [1, 2, 3, 4] -- initializes a row vector
+c = [1; 2; 3; 4;] -- initializes a column vector
+m = [1 2; 3 4] -- initializing a 2 x 2 matrix
+m .* m -- element-wise multiplication of m by itself
+m .+ m -- element-wise addition of m with itself
+m ./ m -- .. 
+m .^ m -- .. 
+ones(n, m) -- generates a matrix n x m of 1's
+zeros(n, m) -- generates a matrix n x m of 0's
+eye(n) or Eye(n, m) -- generates the identity matrix
+rand(n,m) -- generates an n x m matrix of randoms 0-1
+randn(n,m) -- generates an n x m matrix of randoms 0-1
+              using normal distribution
+s = 2:2:10 -- makes a vector that starts at 2, increments 
+              by 2 until 10
+mat = [1 2; 3 4]
+mat(1,1) -- returns 1
+mat(1,[1,2]) -- returns [1 2]
+mat(1, 1:2) -- returns [1 2]
+mat(1, :) -- returns [1 2], the colon operator is working
+              as a select all operator
+
