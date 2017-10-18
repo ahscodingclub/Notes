@@ -1,7 +1,9 @@
+*** Downloading and Basic Operation ***
 octave -- starts octave GUI
 octave-cli -- starts octave via command line
 exit -- exits command line octave
 PS1(">> ") -- change the prompt
+clc -- clears the screen within an octave session
 valid calculations include: 5+5 ; 10-5 ; 1/2 ; 2^8; pi
 text = "Hello World" -- initializes the text variable
 semicolons after lines run the command in the background
@@ -18,6 +20,8 @@ eye(n) or Eye(n, m) -- generates the identity matrix
 rand(n,m) -- generates an n x m matrix of randoms 0-1
 randn(n,m) -- generates an n x m matrix of randoms 0-1
               using normal distribution
+
+*** Less Basic Operations ***
 s = 2:2:10 -- makes a vector that starts at 2, increments 
               by 2 until 10
 mat = [1 2; 3 4]
@@ -26,4 +30,35 @@ mat(1,[1,2]) -- returns [1 2]
 mat(1, 1:2) -- returns [1 2]
 mat(1, :) -- returns [1 2], the colon operator is working
               as a select all operator
+sprintf("Pi to 8 decimals: %0.8f", pi) -- prints pi to 8 decimals
+ceil(x) -- ceiling of x
+floor(x) -- floor of x
+round(x) -- rounds x
+max(x) -- highest value in a vector
+min(x) -- lowest value in a vector
+help(max) -- provides help for the max function, just like python, 
+             help is available for built in functions
 
+*** Loading, Saving and Using Data ***
+octave uses a working directory
+one can surf directories just like command line through octave
+load("<filename>") or load <filename> -- data will be loaded into 
+                           a variable with the name as the file 
+                            by default
+m = load("double.dat") -- loads the data in the file into m
+v = rand(5,1)
+save mydata.dat v -- will save the value in v to mydata.dat
+f = tempfile -- creates a temporary file that will be deleted
+                when the session is eneded
+save v f
+load f -- loads all data back into v
+
+*** Merging Data ***
+A = [1;2;3]
+B = [4;5;6]
+C = [A,B] -- places B next to A, resulting in a 2 col matrix
+C = [A;B] -- places B on the end of A, resulting in a vector
+--
+
+size(m) -- returns a matrix of the size
+length(v) -- returns the longest dimension

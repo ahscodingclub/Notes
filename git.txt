@@ -15,6 +15,7 @@ git add <filename> -> add a file to be tracked in your repository
 git add . -> adds all the changed to be committed
 git commit -a -m '<comment>' -> make a commit
 git push origin <remote> master <branch> -> push changed from the clone to the master branch
+git pull origin <remote> master <branch> -> push changed from the clone to the master branch
 git reset --soft HEAD^ -> remove the last commit but keep the changes to the file
 git reset --hard HEAD^ -> this line removes the last commit and reverts the changes to the file
 git checkout -b myBranch -> create and move to that new branch
@@ -22,3 +23,5 @@ git checkout -b myBranch -> create and move to that new branch
 "gh-pages" then settings->default branch-> gh-pages and delete the master branch
 --
 git rm <filename> -- to untrack and remove a file from a git repository
+git log -- history of commits
+git push -u origin master -- '-u' remember my credentials next time

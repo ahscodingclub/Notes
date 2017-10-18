@@ -128,47 +128,53 @@ tar -cvpzf backup.tar.gz --exclude=/backup.tar.gz --one-file-system /
       -esc esc -- exit copy mode and return to the 
                   end of the buffer
     exit -- leave screen session
-*script <file> -- command to log terminal 
+
+script <file> -- command to log terminal 
   exit -- exits logging session
-* scp <file> <destination> -- to put a file somewhere
+
+scp <file> <destination> -- to put a file somewhere
       ex: scp assingment jsauter@cs.oswego.edu:~/public_hmtl/csc466/
+
 ****SysAdmin Stuffs****
-* uname -a -- to check all interesting facts about kernel
+
+uname -a -- to check all interesting facts about kernel
         -v -- just to check kernel version
         -r -- just to check kernel release
-* ifconfig -- show current ip address of system (old way)
-* ip addr show -- show all ips on system (new way)
-          <device name> -- show the ip of this component
-* df -ah -- disk free, all file systems with human
+
+ifconfig -- show current ip address of system (old way)
+
+ip addr show -- show all ips on system (new way)
+                <device name> -- show the ip of this component
+
+df -ah -- disk free, all file systems with human
               readable formatting
           
-* service <service name> status -- check the status of
+service <service name> status -- check the status of
                                     a service (old way)
-* systemctl status <service> -- check the status of 
+
+systemctl status <service> -- check the status of 
                                    a service (new way)
-* du -sh <directory> -- to check the size of everything in                          a directory
-* netstat -tulpn -- to check for open ports tcp udp
-* rename 's/^TestSR/CL/' * -- to rename files in a directory
------
+du -sh <directory> -- to check the size of everything in                          a directory
+
+netstat -tulpn -- to check for open ports tcp udp
+
+rename 's/^TestSR/CL/' * -- to rename files in a directory
+
 *I had an issue where I was not able to click "apply" in display settings
   to resize the display while connected to another monitor (projector).
   The way I was able to solve this was by deleting some config settings 
   for this output, in a file I found by running <locate --existing monitors.xml>
-------
 lscpu -- list important statistics about the machine, including the number of 
+
          cores and sizes of caches
-------
+
 * <ctrl><alt><F1-F7> -- spawn virtaul terminal ( f7 ) is gui
-------
+
 * eog -- open images via command line
-------
+
 rename 's/^/1_/' DATASET* -- for renaming every file to something appneded to it that starts with "dataset" 
-------
+
 fusermount -u /home/t420/Documents/Test to unmount an ecrypted folder
-------
+
 sudo service network-manager restart -- to restart the wifi card 
-
-
-
-
 

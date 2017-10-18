@@ -1,0 +1,325 @@
+***8/28/2017***
+
+Cognition: a term referring to the mental processes involved in gaining knowledge and comprehension, 
+            including thinking, knowing, remembering, judging and problem solving. These are higher 
+            level function of the brain and encompass language, imagination, perception and planning.
+            (and even emotion). 
+
+Cognitive science is an interdisciplinary endeavor that aims to understand cognition
+
+What are the (historically speaking) the disciplines that contribute to Cognitive Science?:
+
+Psychology
+
+Computer Science (Artificial Intelligence)
+
+Philosophy
+
+Linguistics
+
+Question raised: Is there a language of thought
+  linguistic nativism-- language is innate to mind
+  linguistic empericisism -- language is learned 
+
+***8/30/2017***
+
+Increasingly, the following fields are making contributions to (as well as being by)
+Cognitive Science
+
+"Learning Sciences"(Education)
+
+Biology (particularly evolutionary biology and ecology)
+
+Literary and historical studies ("Cognitive Humanities")
+
+Art and music
+
+Sociology and Business
+
+Cognitive Science has practical, as well as theoretical aims
+
+** Cognitive Science: Some Early Prehistory 
+(Important note -- this "story" is told from a Eurocentric perspective!)
+
+An important area: epistemology, or theory of knowledge
+
+The Greek Philosiphers: Plato and Aristotle
+
+Painting: The School of Athens by Rafael 
+
+Socrates --> Plato --> Aristotle 
+
+Plato emphasized the realm of the forms 
+
+Aristotle was more scientific
+
+HW: flatland 
+
+Dualism: The Contribution of Descartes
+
+Descartes -- Interseted in the connection between mind and body; Methodological doubt; the ontological argument; 
+             contributions to analytic philosipy; cartesien coordinate system 
+
+Dualism: There are two distinct kinds of substances: mental and physical 
+
+questions: are they really distinct?; If they are not distinct, what is the relationship
+
+***9/1/2017***
+
+Associationism: is the idea that mental processes operate by the conjunction 
+(or "association") of one state with its successor states.
+
+John Locke, David Hume, James Mill, John Stuart Mill were philosiphers who
+advocated this view
+
+The study of mind remained solely in the province of philosophy until the nineteenth 
+century, when experimental psychology developed.
+
+Wilhelm Wundt and his students initiated laboratory methods for studying mental 
+operations more systematically.
+
+*Some intellectual precursores to contemporary Cognitive Science
+1) The reaction against Behaviorism in Psycology 
+
+Behaviorism, the doctrine, is committed in its fullest and most complete
+sense to the truth of the following three sets of claims.
+
+1. Psychology is the science of behavior. 
+   Psychology is not the science of mind. 
+
+2. Behavior can be described and explained without making ultimate
+reference to mental events or to internal psychological processes.
+
+The sources of behavior are external (in the environment), not internal
+(in the head).
+
+In science, it is important to answer the question: 
+  What are the boundary conditions
+
+Recommended book: John Holland Signals and Boundaries
+
+3. In the course of theory development in psychology, if, somehow, mental terms 
+or concepts are deployed in describing or explaining behavior, then either (a) these
+terms or concepts should be eliminated and replaced by behavioral terms or (b) the can
+and should be translated or paraphrased into behavioral concepts.
+
+Some major figures in modern behaviorist movement:
+
+Ivan Pavolov (early 20th century): nobel prize for classical conditional
+
+John watson (early 20th century): Hopkins
+
+B.F. Skinner (mid 20th century): Professor at Harvard, wrote Walden 2
+
+Henry David Through wrote Walden 
+
+*Some aspects of Behaviorism: 
+
+Classical Conditioning
+
+Classical conditioning happends when a stimulus the animal can identify
+(such as an odor in the water) is followed by a bioloically significant
+event (such as the appearance of food).
+
+After several such pairings, the animal learns the connection.
+
+The next time the stimulus occurs, the animal acts like it expects the 
+same event. That is, it makes the anticipatory response.
+
+See youtube: 
+
+
+Putting them together: 3 case studies
+
+Terry Winograd and SHRDLU
+
+The imagery debate
+
+Matt’s theory of vision
+
+Background to SHRDLU
+
+Idea of language as: 
+Hierarchically organized
+Planned
+Rule-goverened
+
+2) Computational approach to information-processing
+
+SHRDLU is a program for understanding natural language, writeen by Terry Winograd at the M.I.T. Artificial Intelligence Labratory in 1968-70.  SHRDLU carried on a simple dialog (via teltype) with a user, about a small world of objects ( the BLOCKS world) shown on an early display screen)
+
+What is a simulation
+
+In what cases does a simulation represent what we might consider reality?
+
+Direct analogy between formal languages and natural languages
+
+Hierarchical organization                                    Recursion
+Plan                                            Programs
+Rules                                            Agorithms
+
+Context-free grammars → transformation or production rules
+
+***9/25/2017***
+
+Common assumptions about information:
+
+Information is coded in a digital/propositional format
+based on the formal languages used to program computers
+
+Digital information-coding
+
+Information is coded in a format that has the basic properties
+of a language: 
+
+Basic constituents are individual symbols
+
+A constituent is a part of a whole
+
+Compositionality --> complex structures are built up 
+from idividual symbols according to formation rules
+
+Arbitrary connections between symbolic structures
+and what they represent
+
+Digital information-processing
+
+The model for thinking about digital
+information-processing are formal languages
+(e.g. logical languages and computer programming 
+languages)
+
+Model information-processing on, e.g. 
+
+proofs in logical languages
+
+implementatoin of insturctions in a production system
+
+Imagistic informating-coding
+
+Non-symbolic: images are not built up from basic elements
+
+Not compositional
+
+The parts of image cannot reoccur in other images
+
+No rules for buidling up images from their parts
+
+
+***9/27/2017***
+Representation in images
+
+Representation depends upon systematic correlation between properties of
+representation and properties of what it represents
+
+  pictoral depiction depends upon resemblance
+
+  can be schematic resemblance, as in a map
+
+The issues for cognitive science
+
+Is information always encoded in a digital format - or are three
+cases of imagistically encoded information?
+
+How can we explore this experimentally?
+
+By looking at how subjects carry out information-processing 
+tasks involving images
+
+Seeing whether their behavior provides indirect evidence
+that they are scanning/manipulating images
+
+dates back to wilhelm wundt
+
+the strong interpretation
+
+Subjects perform the task by rotation/scanning
+mental images in their "mind's eye"
+
+Te preocess of mental reotation/scanning has is structurally
+similar to physical processes of rotation/scanning
+
+Seems to match evidence from introspection
+
+Problems with the strong interpretation
+
+Dennett's "Cartesian theatre"
+
+Who or what is doing the scanning/rotating?
+
+  Where is the image projected?
+
+  Threat of regress if we take the 
+  metaphor of the "mind's eye" literally
+
+Three milestones
+
+1) SHRDLUE - WINOGRAD
+2) IMAGERY DEBATE (DIGITAL/IMAGISTIC)
+3) DAVID MARRS THREE PRINCIPLES
+
+Marr's approach to vision
+
+Distinguished different explanatory tasks at different levels
+
+Gave a general theoretical framework from combining thme
+
+apply the framework in considerable detail to a single example ; the early visual system in animals.
+
+Marr's three level 
+
+Computational -- What is the task being studies
+
+Algorithmic -- how can the task be modeled in terms of preocsses
+
+Implementational -- how can the process be made to run in a machine or some 
+other mechanism (like a body)
+
+RPI -- Ron Sun Clarion
+
+***10/2/2017***
+
+TEST NEXT CLASS
+
+Structure: 
+
+10 TF questions
+
+Identifications (key concepts and people) 8C5 
+
+What is cognitive science?
+
+  Is there such a thing as cognitive science (as opposed to the cognitive sciences)?
+
+  Are there any basic assumptions about the mind that unify all the different
+  models and approaches we have been considering?
+
+  Does cognitive science have a distinctive methodology?
+
+what is the difference between an area of knowledge and a discipline
+
+tacit
+
+DISCIPLINARY HEXAGRAM (COULD BE ON TEST)
+
+Identifies connections between different cognitive sciences, but sheds no light
+on why there need to be suc connections
+
+Doesnt help us to understand what each discipline contributes
+
+Desn't give a very accurate picture of contemporary cognitive science.
+
+Basic assumptions
+
+The mind is too complicated to be understood using the resources
+of any discipline on its own
+
+Need for interdisciplinarity
+
+  The mind has to be undersstood at many different levels
+
+Unification of knowledge perspective -- a kind of ideal → reductionism → trying to find a fundamental principle (or intellectual “field”) → Auguste Comte
+
+An example of reductionism:  Social Sciences → interaction of groups → Biology (explained in terms of biology?) → Chemistry → interaction of chemical elements → Physics (Explained in terms of particles and physical properties)
+
+In the wold of the university: 
