@@ -15,3 +15,18 @@ ctrl--R -- to undo an undo, to redo last undone change
 <start><end>s/<to be replaced>/<with> -- replaces for line sequence
 set spell -- turn spell check on 
 set nospell -- turn spell check off
+
+:20,101 fold -- fold lines 20-101
+:set fdm -- set folding to manual
+:<shift>v -- select lines zf -- fold selected lines
+zfa} -- fold from first breace to last
+zo -- open fold 
+zO -- open all folds (nested)
+zc -- close a fold
+zd -- delete fold
+zE -- zap all folds
+zj -- move down a fold
+zk -- move up a fold 
+mkview -- make view (save folds)
+loadview -- load the view (folds)
+
