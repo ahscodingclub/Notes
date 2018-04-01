@@ -178,3 +178,10 @@ fusermount -u /home/t420/Documents/Test to unmount an ecrypted folder
 
 sudo service network-manager restart -- to restart the wifi card 
 
+trash-cli: command line tool to manage trash
+		
+					trash-put <file> 
+					trash-list 
+					trash-restore
+					trash-empty
+

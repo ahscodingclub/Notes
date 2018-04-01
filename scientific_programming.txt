@@ -1,0 +1,15 @@
+		tensorflow/pytorch. 
+
+		Standford Machine
+		Leaning coure
+
+		University of Washington 		Comp. Neuro course
+
+    Experience with deep learning frameworks such as TensorFlow, CNTK, Caffe, Torch, or 		 	
+		Theano, especially for computer vision
+
+    Participation in deep learning competitions where you finished in the top 5
+
+    Experience with data-parallel and/or accelerated computing (CUDA, OpenCL)
+
+    Experience with embedded architectures, including DSP and hardware accelerators

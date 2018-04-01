@@ -1,0 +1,18 @@
+** from __future__ import division
+
+	An example is
+
+	from __future__ import division
+	print 8/7  # prints 1.1428571428571428
+	print 8//7 # prints 1
+
+	Without the __future__ stuff, both print statements would print 1.
+
+	The internal difference is that without that import, / is mapped to the __div__() method, while 
+	with it, __truediv__() is used. (In any case, // calls __floordiv__().)
+
+	A future statement is a directive to the compiler that a particular module should be compiled 
+	using syntax or semantics that will be available in a specified future release of Python. The 
+	future statement is intended to ease migration to future versions of Python that introduce 
+	incompatible changes to the language. It allows use of the new features on a per-module basis 
+	before the release in which the feature becomes standard.
