@@ -37,4 +37,4 @@ VIM Spell-Check:
                   ]s -- next misspelled word
                   [s -- last mispelled word
                   z= -- provide list of possible correct spelling of word
-
+                  zg -- add word to dictionary
