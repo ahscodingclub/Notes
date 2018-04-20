@@ -29,4 +29,12 @@ zj -- move down a fold
 zk -- move up a fold 
 mkview -- make view (save folds)
 loadview -- load the view (folds)
+\c<search phrase> -- case insensitive search
+
+VIM Spell-Check:
+                  :set spell -- turn on spell check
+                  :set nospell -- turn off spell check
+                  ]s -- next misspelled word
+                  [s -- last mispelled word
+                  z= -- provide list of possible correct spelling of word
 

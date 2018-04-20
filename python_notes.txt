@@ -2,11 +2,11 @@
 
 	An example is
 
-	from __future__ import division
+	from __future__ import division -- don't need this in python 3, only 2.7
 	print 8/7  # prints 1.1428571428571428
 	print 8//7 # prints 1
 
-	Without the __future__ stuff, both print statements would print 1.
+	Without the __future__ , both print statements would print 1.
 
 	The internal difference is that without that import, / is mapped to the __div__() method, while 
 	with it, __truediv__() is used. (In any case, // calls __floordiv__().)
@@ -16,3 +16,44 @@
 	future statement is intended to ease migration to future versions of Python that introduce 
 	incompatible changes to the language. It allows use of the new features on a per-module basis 
 	before the release in which the feature becomes standard.
+
+  When defining a parametric function, parameters can be preconditioned as so the parameter is
+  not required, however can be changed for customized use:
+
+    def func(x, y, z="val")
+      
+    function can be used in two ways  
+
+    func(x,y)
+    func(x,y,z="my custom val")
+
+easy way to set up quick python environment in command line:
+
+  screen
+
+  ctrl-a n
+
+  ctrl-a shft-s
+
+  ctrl-a tab
+
+  ctrl-a :resize -v 10% -- for bottom window
+
+when functions use the same variable names as global variables, then whatever value the function
+assigns the variable to be will have no affect on the global variable value, as the scope of the 
+local variable is strictly the function
+
+this is where the use of global is shown, if one is programming in a function and wants to reference
+the global variable in the function, they can use the global keyword
+
+  x = 2
+
+  def example():
+      global x
+      x+=2
+      print(x)
+
+  print(x)
+
+  >>4
+  >>4

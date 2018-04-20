@@ -118,6 +118,10 @@ tar -cvpzf backup.tar.gz --exclude=/backup.tar.gz --one-file-system /
       shift-x -- kill a split
       k -- kill the current screen window
            (one screen in the screen session)
+      :resize -h x% -- resize current window to x % of total horizontal
+                       screen size
+      :resize -v x% -- resize current window to x % of total vertical 
+                       screen size
       
     -dr -- detatch if existing screen and
             reattach to current console

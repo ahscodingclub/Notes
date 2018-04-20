@@ -1,4 +1,8 @@
 **How to use git**
+
+git every day is also a great resource available at: https://git-scm.com/docs
+
+
 git status -> make sure that git is installed and functional 
 git remote -v -> show verbose information on the remote
 git config --global user.name "ahscodingclub" -> set your username
@@ -14,6 +18,11 @@ git diff <filename> -- shows the differences of the file that have been tracked
 git add <filename> -> add a file to be tracked in your repository
 git add . -> adds all the changed to be committed
 git commit -a -m '<comment>' -> make a commit
+
+by using the -a switch with the commit command to automatically "add" changes from 
+all known files (i.e. all files that are already listed in the index) and to automatically 
+"rm" files in the index that have been removed from the working tree, and then perform the actual commit;
+
 git push origin <remote> master <branch> -> push changed from the clone to the master branch
 git pull origin <remote> master <branch> -> push changed from the clone to the master branch
 git reset --soft HEAD^ -> remove the last commit but keep the changes to the file
