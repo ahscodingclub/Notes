@@ -23,6 +23,7 @@ git add <filename> -> add a file to be tracked in your repository
 git add . -- adds all the changes and new files to be committed
 git add * -- add all files to be commited 
 git commit -a -m '<comment>' -> add all untracked files and changes and commit
+
 git commit -m '<comment>' -- add a commit message to all items previously added
                              to staging area
 
@@ -49,7 +50,6 @@ all known files (i.e. all files that are already listed in the index) and to aut
 **Using github pages**
 
 "gh-pages" then settings->default branch-> gh-pages and delete the master branch
-
 
 **Extra git notes**
 
