@@ -1,13 +1,17 @@
 **How to use git**
 
-git every day is also a great resource available at: https://git-scm.com/docs
+git every day is also a great resource available at: https://git-scm.com/docs along with github for poets by dan shiffman
 
+**Checking that git is installed and working**
 
 git status -> make sure that git is installed and functional 
 git remote -v -> show verbose information on the remote
 git config --global user.name "ahscodingclub" -> set your username
 git config --global user.email "jake.sauter3@gmail.com" -> set your email
-*there is two options for starting a repository 
+
+
+**Creating or cloning a repository to local machine**
+ 
   git clone https://github.com/ahscodingclub/Notes.git -> clone a repository to your directory 
   git init -> make your directory a git repository
 git status
@@ -16,24 +20,38 @@ git diff <filename> -- shows the differences of the file that have been tracked
     git remote add origin <https//...> -> add a repository thats made using init locally
     git push -u origin master 
 git add <filename> -> add a file to be tracked in your repository
-git add . -> adds all the changed to be committed
-git commit -a -m '<comment>' -> make a commit
+git add . -- adds all the changes and new files to be committed
+git add * -- add all files to be commited 
+git commit -a -m '<comment>' -> add all untracked files and changes and commit
+git commit -m '<comment>' -- add a commit message to all items previously added
+                             to staging area
 
-by using the -a switch with the commit command to automatically "add" changes from 
-all known files (i.e. all files that are already listed in the index) and to automatically 
-"rm" files in the index that have been removed from the working tree, and then perform the actual commit;
+**Pushing and pulling to the repository**
 
 git push origin <remote> master <branch> -> push changed from the clone to the master branch
 git pull origin <remote> master <branch> -> push changed from the clone to the master branch
 git reset --soft HEAD^ -> remove the last commit but keep the changes to the file
 git reset --hard HEAD^ -> this line removes the last commit and reverts the changes to the file
 git checkout -b myBranch -> create and move to that new branch
-**to use git pages, make the master branch named
-"gh-pages" then settings->default branch-> gh-pages and delete the master branch
---
+
+by using the -a switch with the commit command to automatically "add" changes from 
+all known files (i.e. all files that are already listed in the index) and to automatically 
+"rm" files in the index that have been removed from the working tree, and then perform the actual commit;
+
 git rm <filename> -- to untrack and remove a file from a git repository
 git log -- history of commits
 git push -u origin master -- '-u' remember my credentials next time
+
+by using the -a switch with the commit command to automatically "add" changes from 
+all known files (i.e. all files that are already listed in the index) and to automatically 
+"rm" files in the index that have been removed from the working tree, and then perform the actual commit;
+
+**Using github pages**
+
+"gh-pages" then settings->default branch-> gh-pages and delete the master branch
+
+
+**Extra git notes**
 
 **When pushing file changes, DO NOT <git add *> and put the specific descrition of a single file
 change in the commit message, ideally different commits should be used, or if updating multiple
