@@ -34,3 +34,12 @@ git checkout -b myBranch -> create and move to that new branch
 git rm <filename> -- to untrack and remove a file from a git repository
 git log -- history of commits
 git push -u origin master -- '-u' remember my credentials next time
+
+**When pushing file changes, DO NOT <git add *> and put the specific descrition of a single file
+change in the commit message, ideally different commits should be used, or if updating multiple
+files as apart of one approved change, and nothing else has been changed, <git add *> is acceptable
+
+A cool idea is to keep a list of file names in the terminal and pass this to git update if I am 
+working on different specific file structures in the same project that requires frequent updating
+
+this would be achieved by:   list=(git.txt dot.txt);for file in ${list[*]};do git add $file;done
