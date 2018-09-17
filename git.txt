@@ -18,6 +18,8 @@ git status
 git diff <filename> -- shows the differences of the file that have been tracked     
                         versus the current version of the file
     git remote add origin <https//...> -> add a repository thats made using init locally
+    git remote set-url origin https://github.com/jakesauter/lateralization_project.git -- set the origin
+                                to a new url (really quick and easy to change repo-hosts)
     git push -u origin master 
 git add <filename> -> add a file to be tracked in your repository
 git add . -- adds all the changes and new files to be committed
@@ -30,15 +32,13 @@ git commit -m '<comment>' -- add a commit message to all items previously added
 **Pushing and pulling to the repository**
 
 git push origin <remote> master <branch> -> push changed from the clone to the master branch
+                -f -- with force, will not stop for local repo not being up to date and push anyway
 git pull origin <remote> master <branch> -> push changed from the clone to the master branch
 git reset --soft HEAD^ -> remove the last commit but keep the changes to the file
 git reset --hard HEAD^ -> this line removes the last commit and reverts the changes to the file
 git checkout -b myBranch -> create and move to that new branch
 
-by using the -a switch with the commit command to automatically "add" changes from 
-all known files (i.e. all files that are already listed in the index) and to automatically 
-"rm" files in the index that have been removed from the working tree, and then perform the actual commit;
-
+git rm -r --cached .  -- remove all files from being tracked
 git rm <filename> -- to untrack and remove a file from a git repository
 git log -- history of commits
 git push -u origin master -- '-u' remember my credentials next time

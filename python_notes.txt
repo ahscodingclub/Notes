@@ -1,3 +1,7 @@
+** How to properly use pip
+
+python -m pip install --user --upgrade pip
+
 ** from __future__ import division
 
 	An example is
@@ -17,6 +21,8 @@
 	incompatible changes to the language. It allows use of the new features on a per-module basis 
 	before the release in which the feature becomes standard.
 
+** function definitions
+
   When defining a parametric function, parameters can be preconditioned as so the parameter is
   not required, however can be changed for customized use:
 
@@ -26,25 +32,12 @@
 
     func(x,y)
     func(x,y,z="my custom val")
-
-easy way to set up quick python environment in command line:
-
-  screen
-
-  ctrl-a n
-
-  ctrl-a shft-s
-
-  ctrl-a tab
-
-  ctrl-a :resize -v 10% -- for bottom window
-
 when functions use the same variable names as global variables, then whatever value the function
 assigns the variable to be will have no affect on the global variable value, as the scope of the 
 local variable is strictly the function
 
 this is where the use of global is shown, if one is programming in a function and wants to reference
-the global variable in the function, they can use the global keyword
+the global variable in the function, they can use the global keyword 
 
   x = 2
 
@@ -57,3 +50,34 @@ the global variable in the function, they can use the global keyword
 
   >>4
   >>4
+
+
+
+** easy way to set up quick python environment in command line:
+
+  screen
+
+  ctrl-a n
+
+  ctrl-a shft-s
+
+  ctrl-a tab
+
+  ctrl-a :resize -v 10% -- for bottom window
+
+** running code in interpreter
+
+exec(open("midpoint_method.py").read()) will do the same, but seems more reliable as the import seems not to track changes in the file once the interpreter is started
+
+from file import *, will import all of the functions and run any executable lines
+
+import os
+os.system("clear") to send message to terminal to clear
+
+** Numpy
+
+import numpy as np
+
+np.arange(10) -- produces a numpy array from 0 to 9 of length 10
+
+**

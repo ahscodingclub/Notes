@@ -158,16 +158,12 @@ service <service name> status -- check the status of
 
 systemctl status <service> -- check the status of 
                                    a service (new way)
-du -sh <directory> -- to check the size of everything in                          a directory
+du -sh <directory> -- to check the size of everything in a directory
 
 netstat -tulpn -- to check for open ports tcp udp
 
 rename 's/^TestSR/CL/' * -- to rename files in a directory
 
-*I had an issue where I was not able to click "apply" in display settings
-  to resize the display while connected to another monitor (projector).
-  The way I was able to solve this was by deleting some config settings 
-  for this output, in a file I found by running <locate --existing monitors.xml>
 lscpu -- list important statistics about the machine, including the number of 
 
          cores and sizes of caches
@@ -176,7 +172,7 @@ lscpu -- list important statistics about the machine, including the number of
 
 * eog -- open images via command line
 
-rename 's/^/1_/' DATASET* -- for renaming every file to something appneded to it that starts with "dataset" 
+rename 's/^/1_/' DATASET* -- for renaming every file to something appended to it that starts with "dataset" 
 
 fusermount -u /home/t420/Documents/Test to unmount an ecrypted folder
 
@@ -189,3 +185,35 @@ trash-cli: command line tool to manage trash
 					trash-restore
 					trash-empty
 
+**** Process Control ****
+
+	xkill -- click on the process you click on
+
+	nice -- -20 best, 19 worse
+
+	renice -- nice a program that is already running
+
+	pkill <search_term> -- kills the process most closly relating to search term	
+	killall <search_term> -- same as pkill, however if multiple instances are 
+														active all will be killed
+
+	pgrep <search term> -- returns the process id of the search term, can be used such as kill $(pgrep chrome)
+
+	htop -- improved version of the top command to manage processes
+
+	ps aux -- will show all running processes, if a process is frozen it can be found here to kill via the process id
+
+	df -h -- disk usage human readable
+
+
+**** Solved issues ****
+
+* I was not able to click "apply" in display settings
+  to resize the display while connected to another monitor (projector).
+  The way I was able to solve this was by deleting some config settings 
+  for this output, in a file I found by running <locate --existing monitors.xml>
+
+* When connecting to UPitt secure network, or setting up for the first time, 
+  one of the setup scripts overwrote /etc/resolve.conf, only allowing my
+  computer to access to that DNS server, so I had to add the public
+  DNS server 8.8.4.4 and 8.8.8.8 to the /etc/resolve.conf 
